@@ -9,7 +9,7 @@ public class Alice {
                 .append("pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures ")
                 .append("or conversation?'")
                 .toString();
-        
+
         System.out.println(alice);
         System.out.print("Please enter a search term: ");
         Scanner input = new Scanner(System.in);

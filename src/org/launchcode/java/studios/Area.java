@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 public class Area {
     public static void main(String[] args) {
-        float radius = GetRadius();
+        float radius;
+        do {
+            radius = GetRadius();
+        } while (radius < 0);
 
-        Print(String.format("The area of the circle of radius %.3f is: %.3f", radius, GetArea(radius)));
+        Print(String.format("The area of the circle of radius %.2f is: %.3f", radius, GetArea(radius)));
 
     }
 
